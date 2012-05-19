@@ -1,0 +1,25 @@
+<%= form_for(@user) do |f| %> 
+  <div class='h-f-f' style='width: 330px; float: left; background: white; margin: 0px 0px 0px 0px'>
+		<%= f.text_field :email, :class=>"g-input-email", :style=>"z-index: 0;", :placeholder=>"Your Email" %>
+	</div>
+	<div style='float: left; padding: 0px 0px 0px 15px; margin: 0px 0px 0px 0px'>
+		<%= f.submit "SEND", :class =>"g-button g-send-button" %>
+	</div>
+
+   <div style="clear: both"></div>
+   
+   <div class="field" style='color: white; margin: 5px 0 0 0'>
+	I am a
+    <%= f.radio_button(:user_type, 1) %> Student
+	<%= f.radio_button(:user_type, 2) %> Company
+  </div>
+   
+   <% if @user.errors.any? %>
+    <div id="error_explanation" style="margin: 5px 0px 0px 0px">
+	  <ul>
+      <% @user.errors.full_messages.each do |msg| %><li><%= msg %></li><% end %>
+	  </ul>
+    </div>
+  <% end %>
+
+<% end %>

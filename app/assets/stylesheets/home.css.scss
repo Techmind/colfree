@@ -1,0 +1,119 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+	background: #fff
+}
+
+.g-small-button {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	margin: 0px;
+	padding: 0px 15px 1px 15px;
+	font: normal normal 30px Verdana, Arial, Helvetica, sans-serif;
+	line-height: 36px;
+	border-width: 0px;
+	border-style: solid;
+	border-radius: 5px;
+	-ms-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	cursor: pointer;
+}
+
+.g-inner {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	margin: 0px;
+	padding: 0 15px 1px 15px;
+	font: normal normal 30px Verdana, Arial, Helvetica, sans-serif;
+	line-height: 28px;
+	border-width: 0px;
+	border-style: solid;
+	border-radius: 3px;
+	-ms-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	cursor: pointer;
+
+}
+
+.g-button {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	margin: 0;
+	padding: 0 15px 1px 15px;
+	font: normal normal 30px Verdana, Arial, Helvetica, sans-serif;
+	line-height: 22px;
+	border-width: 0px;
+	border-style: solid;
+	border-radius: 10px;
+	-ms-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	cursor: pointer;
+}
+
+.g-send-button {
+	background-color: #8cb340;
+	width:134px;
+	height:45px;
+}
+
+.h-f-f {
+	margin: 0;
+	padding: 0 15px 1px 15px;
+	position: relative;
+	padding: 3px 6px 2px 6px;
+	line-height: 0;
+	border: 1px solid #DDD;
+	border-radius: 10px;
+	-ms-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	overflow: hidden;
+	-webkit-transition: box-shadow 0.3s, color 0.3s, border 0.3s;
+	-moz-transition:    box-shadow 0.3s, color 0.3s, border 0.3s;
+	-ms-transition:     box-shadow 0.3s, color 0.3s, border 0.3s;
+	-o-transition:      box-shadow 0.3s, color 0.3s, border 0.3s;
+	transition:         box-shadow 0.3s, color 0.3s, border 0.3s;
+
+}
+
+.g-input-email {
+	margin: 2px 0px 0px 0px;
+	padding: 0px 0px 4px 5px;
+	width: 100%;
+	font-size: 12px;
+	line-height: 18px;
+	height:18px;
+	color: #777777;
+	border: none;
+	outline: 0;
+	background: transparent;
+	
+	font: normal normal 26px Verdana, Arial, Helvetica, sans-serif;
+	
+	height: 32px;
+}
+
+.p-texts {			
+	font: normal normal 16px Verdana, Arial, Helvetica, sans-serif;
+	color: #ffffff;
+	width: 496px;
+}
+
+.g-container {
+	width: 570px;
+	height: 480px;
+	padding: 0px 0px 0px 0px; 
+	background: #000000;
+}
+
+.g-container p {
+	margin-bottom: 32px;
+}
