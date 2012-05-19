@@ -1,4 +1,22 @@
 Vlab::Application.routes.draw do
+  match 'users/list_all' => 'users#list_all'
+  
+  match 'users/', :via => :get , :to => 'users#new'
+  
+  match '/auth/twitter/callback', to: 'users#from_twitter'
+  
+  match '/auth/facebook/callback', to: 'users#from_facebook'
+  
+  match '/auth/linkedin/callback', to: 'users#from_linkedin'
+  
+  resources :users
+
+  get "home/index"
+  
+
+  root :to => "Users#new"
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,14 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Vlab</title>
+  <title>College freelancing</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div style='padding: 0px 0px 0px 40px'>
+		<%=  image_tag('/images/hat.png', :style=>"margin: 0px 0px 0px 2px")%>
+		<div style='color: green; font: bold normal 60px sans-serif; color: #669900; margin: -32px 0px 0px 0px'>
+			College Freelancing
+		</div>
+	</div>
+	
+	<div style="clear: both; width: 1180px">
+			<div style='float:right; width: 580px; position: relative'>
+				<%=  image_tag('/images/stockphoto.jpg', :style=>"overflow: hidden; width: 100%; margin: 0px 0px 0px -50px; height: 480px")%>			
+			</div>
+			<div class='g-container' style="float: right; width: 580px; position: relative">
+				<div style="padding: 0px 0px 0px 35px">
+					<div class='p-texts'>
+						<p style='font: normal normal 28px "Myriad Pro", Verdana, Arial, Helvetica, sans-serif;'>
+						Connect fresh talent with<br/>
+	small business with CollegeFreelance
+						</p>
+						<p>
+							Don`t let your hectic school schedule keep you from gaining the work experience you need. 
+						</p>
+						<p>
+						CollegeFreelance connects talented students with <br/>
+				forward-thinking companies, which offer a variety of virtual freelance opportunities.
+						</p>
+						<p>
+						If you are a current student or business owner, register below to be alerted when CollegeFreelancing launches.
+						</p>
+					</div>
+					
+					<%= yield %>
+				</div>
+			</div>
+		</div>
+		
+		<div style='line-height: 90px; padding: 0px 0px 0px 55px'>
+			<button onclick='window.location = "/auth/facebook/" ' class='g-small-button' style='background: #728bc3; height: 36px; width: 137px; display: inline; background-image: url(/images/F.png);background-position: 15px 3px;background-repeat: no-repeat'>
+				<span style='border-left: solid 2px #3d6685; width: 1px; ; display: inline; position: relative;left: 8px'></span>
+				<span style='font: normal 14px Arial; color: #fff; display: inline; position: relative;left: 20px;top: -8px'>
+					Register
+				</<span>
+			</button>
+			
+			<!--
+			<a href='/auth/twitter/'>
+				<button class='g-small-button' style='background: #69c0c4; height: 36px; width: 137px; margin: 0px 0px 0px 32px; display: inline;background-image: url(/images/twitter.png);background-position: 8px 6px;background-repeat: no-repeat'>
+					<span style='border-left: solid 2px #41818c; width: 1px; ; display: inline; position: relative;left: 8px;'></span>
+					<span style='top: -8px;font: normal 14px Arial; color: #fff; display: inline; position: relative;left: 20px;'>
+						Register
+					</span>
+				</button>
+			</a>
 
-<%= yield %>
-
+			<a href='/auth/linkedin/'>
+				<button class='g-small-button' style='background: #307cc0; height: 36px; width: 137px; margin: 0px 0px 0px 32px; background-image: url(/images/lin.png);background-position: 8px 4px;background-repeat: no-repeat'>
+					<span style='border-left: solid 2px #3d6685; width: 1px; ; display: inline; position: relative;left: 8px'></span>
+					<span style='font: normal 14px Arial; color: #fff; display: inline; position: relative;left: 20px;top: -8px'>
+						Register
+					<span>
+				</button>
+			</a>
+			-->
+		</div>
 </body>
 </html>
