@@ -1,19 +1,20 @@
 #notice {
   color: green; }
 
-.field_with_errors {}
+.field_with_errors {
+}
 
 #error_explanation {
   color: red;
-  padding: 7px;
+  padding: 0px;
   padding-bottom: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   h2 {
     text-align: left;
     font-weight: bold;
-    padding: 5px 5px 5px 15px;
+    padding: 0px 0px 5px 5px;
     font-size: 12px;
-    margin: -7px;
+    margin: 0px;
     margin-bottom: 0px;
     background-color: #c00;
     color: #fff; }
