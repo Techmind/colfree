@@ -54,6 +54,15 @@
 	box-shadow: 0 0 3px #555;
 	-webkit-box-shadow: 0 0 3px #555;
 	-moz-box-shadow: 0 0 3px #555;
+	_background: rgb(25,25,25);
+}
+
+*+html  #tiptip_content{
+  background: rgb(25,25,25);
+}
+
+@media \0screen {
+  #tiptip_content {background: rgb(25,25,25);}
 }
 
 #tiptip_arrow, #tiptip_arrow_inner {
